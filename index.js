@@ -6,7 +6,7 @@ const getMattes = (customers, mattes = []) => {
         color.type === 'M' && mattes.includes(color.number)
       )
     )
-    // filter colors already picked (gross type of the mattes already picked)
+    // filter colors already picked
     .map(colors =>
       colors.filter(color => !mattes.includes(color.number))
     );
